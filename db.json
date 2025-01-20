@@ -1,0 +1,46 @@
+{
+  "admins": [
+    {
+      "id": "1",
+      "email": "jimmy@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Jimmy James",
+      "email": "jamesnjugush.com",
+      "password": "12345"
+    },
+    {
+      "id": "5aaa",
+      "name": "jonathan ndambuki",
+      "email": "jonah@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "products": [
+    {
+      "id": "2",
+      "name": "Product 2",
+      "price": 20000
+    },
+    {
+      "id": "4",
+      "name": "Product 5",
+      "price": "3000"
+    },
+    {
+      "id": "5",
+      "name": "product 3",
+      "price": "2000"
+    },
+    {
+      "id": "09d2",
+      "name": "Product 1",
+      "price": "2000"
+    }
+  ],
+  "carts": []
+}

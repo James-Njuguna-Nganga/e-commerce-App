@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="login" style="display:block;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button type="submit">Login</button>
+                <button onclick="showRegisterForm()">Register</button>
+                <button onclick="showAdminLogin()">Admin Login</button>
+            </form>
+        </div>
+
+        <div id="register" style="display:none;">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="regName" placeholder="Name">
+                <input type="email" id="regEmail" placeholder="Email">
+                <input type="password" id="regPassword" placeholder="Password">
+                <button type="submit">Register</button>
+                <button onclick="showLoginForm()">Back to Login</button>
+            </form>
+        </div>
+
+        <div id="adminLogin" style="display:none;">
+            <h2>Admin Login</h2>
+            <form id="adminLoginForm">
+                <input type="email" id="adminEmail" placeholder="Email">
+                <input type="password" id="adminPassword" placeholder="Password">
+                <button type="submit">Login</button>
+                <button onclick="showLoginForm()">Back to User Login</button>
+            </form>
+        </div>
+
+        <div id="adminPanel" style="display:none;">
+            <h2>Admin Panel</h2>
+            <button onclick="showAddProductForm()">Add Product</button>
+            <div id="addProductForm" style="display:none;">
+                <form id="addProduct">
+                    <input type="text" id="productName" placeholder="Product Name">
+                    <input type="number" id="productPrice" placeholder="Product Price">
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+            <button onclick="showProducts()">View Products</button>
+            <div id="productsList" style="display:none;"></div>
+        </div>
+
+        <div id="userPanel" style="display:none;">
+            <h2>User Panel</h2>
+            <button onclick="showProducts()">View Products</button>
+            <div id="productsListUser" style="display:none;"></div>
+            <div id="cart" style="display:none;">
+                <h3>Cart</h3>
+                <div id="cartItems"></div>
+                <button onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+
+        <div id="checkout" style="display:none;">
+            <h2>Checkout</h2>
+            <div id="checkoutDetails"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
