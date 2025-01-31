@@ -37,10 +37,75 @@
           <button type="button" onclick="showLoginForm()">Back to Login</button>
         </form>
       </div>
+
+      <div id="adminLogin" class="form-container" style="display: none">
+        <h2>Admin Login</h2>
+        <form id="adminLoginForm">
+          <input type="email" id="adminEmail" data-cy="admin-input-email" placeholder="Email" required />
+          <input type="password" id="adminPassword" data-cy="admin-input-password" placeholder="Password" required />
+          <button type="submit">Login</button>
+          <button type="button" onclick="showLoginForm()">Back to User Login</button>
+        </form>
+      </div>
+
+      <div id="adminPanel" class="panel-container" style="display: none">
+        <h2>Admin Panel</h2>
+        <button class="btn-primary" onclick="showAddProductForm()">
+          Add Product
+        </button>
+        <div id="addProductForm" style="display: none">
+          <form id="addProduct">
+            <input
+              type="text"
+              id="productName"
+              data-cy='product-input-name'
+              placeholder='Product Name'
+              required
+            />
+            <input
+              type='number'
+              id='productPrice'
+              data-cy='product-input-price'
+              placeholder='Product Price ($)'
+              required
+              min='0'
+              step='0.01'
+            />
+            <button type='submit' data-cy='product-btn-submit'>Add Product</button>
+          </form>
+        </div>
+        <button class='btn-primary' onclick='showProducts()'>
+          View Products
+        </button>
+        <div id='productsList' class='product-list' style='display: none'></div>
+      </div>
+
+      <div id='userPanel' class='panel-container' style='display: none'>
+        <h2>User Panel</h2>
+        <button class='btn-primary' onclick='showProducts()'>
+          View Products
+        </button>
+        <div
+          id='productsListUser'
+          class='product-list'
+          style='display: none'
+        ></div>
+        <div id='cart' class='cart-container' style='display: none'>
+          <h3>Your Cart</h3>
+          <div id='cartItems'></div>
+          <button class='btn-primary' onclick='checkout()'>Checkout</button>
+        </div>
+      </div>
+
+      <div id='checkout' class='checkout-container' style='display: none'>
+        <h2>Checkout Summary</h2>
+        <div id='checkoutDetails'></div>
+      </div>
+
       <footer>
         &copy; E-commerce Application. Developed by James Njuguna.
       </footer>
     </div>
-    <script src="app.js"></script>
+    <script src='app.js'></script> 
   </body>
 </html>
