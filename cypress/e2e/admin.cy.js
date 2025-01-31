@@ -8,10 +8,11 @@ describe('Admin Panel Tests', () => {
     };
   
     beforeEach(() => {
-      cy.visit('http://localhost:3000');
+      cy.visit('http://localhost:58830');
     });
   
     const loginAsAdmin = () => {
+      cy.get('#adminLogin').invoke('show'); 
       cy.get('[data-cy=admin-input-email]').type(adminCredentials.email);
       cy.get('[data-cy=admin-input-password]').type(adminCredentials.password);
       cy.get('form#adminLoginForm').submit();
@@ -19,11 +20,11 @@ describe('Admin Panel Tests', () => {
     };
   
     it('Should log in as admin', () => {
-      loginAsAdmin();
+      loginAsAdmin(); 
     });
   
     it('Should add a new product', () => {
-      loginAsAdmin();
+      loginAsAdmin(); 
   
       cy.get('.btn-primary').contains('Add Product').click();
   
@@ -36,7 +37,7 @@ describe('Admin Panel Tests', () => {
     });
   
     it('Should verify that the product was added', () => {
-      loginAsAdmin();
+      loginAsAdmin(); 
   
       cy.get('.btn-primary').contains('View Products').click();
       

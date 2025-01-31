@@ -4,7 +4,8 @@
 
 body {
   font-family: "Arial", sans-serif;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGGEeL8ZrOnbIaznzV_FmNDv7rZVRstqUGTKeR3KovKlNAJdETqTqyr-lVgrUiGBFt4w&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGGEeL8ZrOnbIaznzV_FmNDv7rZVRstqUGTKeR3KovKlNAJdETqTqyr-lVgrUiGBFt4w&usqp=CAU");
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGGEeL8ZrOnbIaznzV_FmNDv7rZVRstqUGTKeR3KovKlNAJdETqTqyr-lVgrUiGBFt4w&usqp=CAU");
+  background-size: cover; /* Ensures the background image covers the entire body */
 }
 
 header {
@@ -19,6 +20,7 @@ header {
   margin: auto;
   padding: 50px;
 }
+
 .form-container {
   height: 350px;
 }
@@ -30,7 +32,6 @@ header {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 50px;
-  max-height: 1000px;
 }
 
 input {
@@ -66,22 +67,17 @@ input {
 }
 
 .product img {
-  width: 50px;
+  width: 50px; /* Ensure images are appropriately sized */
 }
 
-.cart-container {
-  background-color: lightsalmon;
-  border-radius: 5px;
-}
-
+.cart-container,
 .checkout-container {
-  background-color: lightsalmon;
+  background-color: lightsalmon; /* Consolidated styles for similar containers */
 }
 
 footer {
   text-align: center;
   padding-top: 50px;
-  font-size: 0.12;
-  font-weight: 400px;
-  color: blue;
+  font-size: 12px; /* Changed from '0.12' to '12px' */
+  font-weight: normal; /* Changed from '400px' to 'normal' */
 }
