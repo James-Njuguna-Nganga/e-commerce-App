@@ -1,55 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGGEeL8ZrOnbIaznzV_FmNDv7rZVRstqUGTKeR3KovKlNAJdETqTqyr-lVgrUiGBFt4w&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiGGEeL8ZrOnbIaznzV_FmNDv7rZVRstqUGTKeR3KovKlNAJdETqTqyr-lVgrUiGBFt4w&usqp=CAU");
+}
+
+header {
+  background-color: lightcoral;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
 }
 
 #app {
-    max-width: 400px;
-    margin: auto;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: auto;
+  padding: 50px;
+}
+.form-container {
+  height: 350px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.form-container,
+.panel-container {
+  background-color: lightsalmon;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  max-height: 1000px;
 }
 
 input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-button {
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.btn-primary {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-button:hover {
-    background-color: #0069d9;
+.btn-primary:hover {
+  background-color: lightsalmon;
 }
 
-#productsList, #productsListUser {
-    margin-top: 20px;
+.product-list {
+  margin-top: 20px;
 }
 
 .product {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
-.product button {
-    background-color: #4CAF50;
+.product img {
+  width: 50px;
 }
 
-.product button:hover {
-    background-color: #3e8e41;
+.cart-container {
+  background-color: lightsalmon;
+  border-radius: 5px;
+}
+
+.checkout-container {
+  background-color: lightsalmon;
+}
+
+footer {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 0.12;
+  font-weight: 400px;
+  color: blue;
 }

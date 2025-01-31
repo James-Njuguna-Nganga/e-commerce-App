@@ -1,0 +1,14 @@
+{
+    "name": "e-commerce",
+    "version": "1.0.0",
+    "description": "A sample project",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "James Njuguna",
+    "license": "ISC",
+    "dependencies": {
+        "cypress": "^14.0.1"
+    }
+}

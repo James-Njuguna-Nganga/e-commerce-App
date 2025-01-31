@@ -14,33 +14,68 @@
       "password": "12345"
     },
     {
-      "id": "5aaa",
+      "id": "2",
       "name": "jonathan ndambuki",
       "email": "jonah@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "3",
+      "name": "kelvin koech",
+      "email": "kelvin@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "1e1b",
+      "name": "evans",
+      "email": "evans@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "5bc9",
+      "name": "jonathan",
+      "email": "joe@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "74ba",
+      "name": "jonathan",
+      "email": "joe@gmail.com",
       "password": "1234"
     }
   ],
   "products": [
     {
-      "id": "2",
-      "name": "Product 2",
-      "price": 20000
+      "id": "8",
+      "name": "product 4",
+      "price": "58990.00"
     },
     {
-      "id": "4",
-      "name": "Product 5",
-      "price": "3000"
+      "id": "10",
+      "name": "product 7",
+      "price": "45677.00"
     },
     {
-      "id": "5",
-      "name": "product 3",
-      "price": "2000"
+      "id": "1",
+      "name": "product 10",
+      "price": "23500.00"
     },
     {
-      "id": "09d2",
-      "name": "Product 1",
-      "price": "2000"
+      "id": "1a9e",
+      "name": "drinks",
+      "price": "49000.00"
     }
   ],
-  "carts": []
+  "carts": [
+    {
+      "items": [
+        {
+          "id": "6",
+          "name": "product 3",
+          "price": "7000.00"
+        }
+      ],
+      "id": "1"
+    }
+  ]
 }
